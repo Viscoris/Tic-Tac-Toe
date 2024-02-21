@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #524a4a48;
+}
+#opponent {
+    margin-bottom: 30px;
+    background: grey;
+}
+#scores {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 127px;
+}
+.score {
+    font-size: 54px;
+    text-transform: uppercase;
+}
