@@ -33,3 +33,44 @@ h1 {
     font-size: 54px;
     text-transform: uppercase;
 }
+
+.playerScore {
+    font-size: 30px;
+    margin-top: 10px;
+}
+.reset-counter {
+    margin-top: 20px;
+    margin-left: 122px;
+}
+#gameBoard {
+    width: 450px;
+     display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.tile {
+    height: 150px;
+    width: 150px;
+    display: flex;
+     justify-content: center;
+    color: black;
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.tile:nth-child(3n) {
+    border-right: none;
+}
+.tile:nth-child(6) ~ .tile {
+    border-bottom: none;
+}
+button {
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: #524a4a48;
+    color: #333;
+    border-color: #524a4a48;
+    font-size: 18px;
+    font-weight: 600;
+}
