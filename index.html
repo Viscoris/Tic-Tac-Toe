@@ -7,18 +7,27 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <main class="background">
-        <section id="scoring">
-            <h4 class='playerScore'>Player1: 0 | | Player2: 0</h4>
-            <button class="reset-counter">Reset</button>
+    <section id="scores">
+        <h2 class="score">Score:</h2>
+        <h4 class="playerScore">Player1: 0 | | Player2: 0</h4>
+        <button class="reset-counter">Reset</button>
         </section>
+    <main class="container">
+        <section class="select-opponent" hidden>
+            <select name="opponent" id="opponent">
+                <option value="player">vs Player</option>
+                <option value="computer">Vs Computer</option>
+            </select>
+        </section>
+    
         <section id="title">
-            <h1 class="playerText">Tic Tac Toe</h1>
+            <h1 id="playerText">Tic Tac Toe</h1>
         </section>
+
         <section class="toggles">
-            <button id="resetBtn" class="reset">Reset</button>
-            <button id="playBtn" class="play" hidden>Play</button>
+            <button class="reset-button" id="reset">Reset</button>
         </section>
+        
         <section id="gameBoard">
             <div class="tile" id="0"></div>
             <div class="tile" id="1"></div>
@@ -30,8 +39,9 @@
             <div class="tile" id="7"></div>
             <div class="tile" id="8"></div>
         </section>
+        
+        
     </main>
-    </main>  
 
     <script src="index.js"></script>
 </body>
